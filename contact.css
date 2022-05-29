@@ -1,0 +1,47 @@
+.intro{
+    display: block;
+    margin: 40px;
+}
+
+.contactinfo{
+    margin: 40px;
+}
+
+.contactinfo img{
+    max-height: 18px;  
+}
+
+.iconContainer{
+    display: flex;
+    padding-top: 3px;
+}
+
+.email, .phone{
+    margin: 40px 0 40px;
+}
+
+h2{
+    font-size: 1.2rem;
+}
+
+@media only screen and (min-width: 960px){ 
+
+.overallinfo{
+    display: flex;
+    flex-direction: row;
+    margin: 200px 0;
+    background-color: #5F0909;
+    justify-content: center;
+}
+
+.contactinfo, .intro{
+    max-width: 400px;
+}
+
+.intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+}

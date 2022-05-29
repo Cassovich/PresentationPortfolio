@@ -1,0 +1,49 @@
+
+
+@media only screen and (min-width: 960px){
+
+header{
+  height: 357px;
+  background-color: #FAB5B8;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo{
+height: 100%;
+}
+
+.container > div {
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 24px;
+  color: #8D0E0E;
+  background-color: #FED1B2;
+  border-radius: 120px;
+
+}
+
+aside{
+    height: 100%;
+    width: 334px;
+    font-size: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.container div:hover {
+  padding: 15px 25px;
+}
+
+.container{
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+
+}
+body{
+  background-color: #FAB5B8;
+}
+}

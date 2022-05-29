@@ -1,0 +1,133 @@
+@import url('http://fonts.cdnfonts.com/css/american-typewriter');
+@import url('http://fonts.cdnfonts.com/css/andale-mono');
+            
+
+* {
+    all: unset;
+    display: revert;
+}
+
+a{
+    cursor: pointer;
+}
+
+img {
+    max-width: 100%;
+  }
+  
+  body{
+    background-color: #190C0C;
+    font-family: 'American Typewriter', sans-serif;
+  }
+
+  .header{
+    display: grid;
+    margin-bottom: 3rem;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .header>div{
+    display: none;
+  }
+  
+  .header hr{
+    height: 1px;
+    width: 10px;
+    margin: 5px;
+    background-color: white;
+  }
+
+  .header aside{
+    margin-left: auto;
+    padding-right: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Andale Mono', sans-serif;
+    color: white;
+  }
+
+  .logo{
+    margin-right: auto;
+    padding-left: 16px;
+  }
+
+  .logo img{
+    max-width: 135px;
+  }
+
+.main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.piller{
+    margin: 30px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: white;
+}
+
+.me{
+    margin-right: 30px;
+}
+.piller a{
+    cursor: pointer;
+}
+
+.aboutme{
+    margin: 20px;
+}
+
+.projects{
+    margin: 20px;
+}
+
+.contact{
+    margin: 20px;
+}
+
+footer{
+    display: none;
+}
+
+@media screen and (min-width: 960px) {
+  
+    .logo{
+        margin-left: auto;
+        padding: 0;
+      }
+
+      .logo img{
+        max-width: 200px;
+      }
+
+      .header{
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+
+      .header>div{
+        display: block;
+      }
+
+      .main{
+          max-width: 1200px;
+          margin: 0 auto;
+      }
+
+    footer{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding-bottom: 1rem;
+        margin-top: 5rem;
+        color: white;
+      }
+
+      .piller{
+          font-size: 1.7rem;
+      }
+
+}

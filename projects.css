@@ -1,0 +1,81 @@
+.line{
+    display: none;
+}
+
+.aboutprojects{
+    display: block;
+    margin: 50px;
+}
+
+.aboutprojects *{
+   color: white;
+}
+
+.projects-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.projects-container img{
+    max-width: 150px;
+}
+
+.first, .second{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.sprite{
+    width: 300px;
+    height: 300px;
+    background: url('img/man-walking-earth.png');
+    animation: mansworld 1s steps(8) infinite;
+}
+
+@keyframes mansworld {
+    0%{background-position: 0px;}
+    100%{background-position: -2400px;}
+}
+
+.caption-for-img, .second-captions{
+    display: none;
+}
+
+@media only screen and (min-width: 960px) {
+
+    .projects-container{
+        display: block;
+    }
+
+    .projects-container img{
+        max-width: 300px;
+        max-height: 300px;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .projects-container p{
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    .first, .second{
+        flex-direction: row;
+        position: relative;
+        margin: 100px 0;
+    }
+
+    .line{
+        display: block;
+        background-color: #5F0909;
+        min-height: 100px;
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        transform: translate(0%, -50%);
+        z-index: -1;
+    }
+
+}

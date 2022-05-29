@@ -1,0 +1,121 @@
+@import url('http://fonts.cdnfonts.com/css/american-typewriter');
+@import url('http://fonts.cdnfonts.com/css/andale-mono');      
+
+* {
+    all: unset;
+    display: revert;
+}
+
+a{
+  cursor: pointer;
+}
+
+img {
+    max-width: 100%;
+  }
+  
+  body{
+    background-color: #190C0C;
+    font-family: 'Andale Mono', sans-serif;
+  }
+
+  h1, h2{
+    font-family: 'American Typewriter', sans-serif;
+    color: white;
+  }
+
+  h1{
+    font-size: 1.4rem;
+  }
+
+  p{
+    color: white;
+  }
+
+  aside{
+    color: white;
+  }
+  
+  .header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+    padding-right: 16px;
+  }
+  
+  .header hr{
+    height: 1px;
+    width: 10px;
+    margin: 5px;
+    background-color: white;
+  }
+
+  .logo{
+    max-width: 135px;
+  }
+  
+  .nav{
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    gap: 50px;
+  }
+  
+  li{
+    padding: 10px 20px;
+    color: white;
+    background-color: #8D0E0E;
+    border-radius: 120px;
+    font-size: 0.8rem;
+    font-family: 'American Typewriter', sans-serif;
+  }
+  
+footer{
+  display: none;
+}  
+
+  @media only screen and (min-width: 960px) {
+    .logo{
+      max-width: 290px;
+    }
+    aside{
+      font-size: 1.5rem;
+      padding-right: 1.9rem;
+    }
+  
+    li{
+      padding-right: 1.6rem;
+      padding-left: 1.6rem;
+      max-height: 6rem;
+      color: white;
+      background-color: #8D0E0E;
+      border-radius: 120px;
+      font-size: 1.5rem;
+    }
+
+    h1, h2, p{
+      color: white;
+  }
+
+  h1{
+    font-size: 1.4rem;
+}
+
+  h2{
+    font-size: 1.2rem;
+}
+  
+    footer{
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      padding-bottom: 1rem;
+      margin-top: 5rem;
+      
+    }
+
+    footer p{
+      color: white;
+    }
+  }
